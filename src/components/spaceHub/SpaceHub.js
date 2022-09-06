@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navigation from '../navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
 
 const SpaceHub = () => (
   <Router>
