@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
+import Missions from '../missions/Missions';
 import Rockets from '../rocket/Rockets';
 
 const SpaceHub = () => (
@@ -14,6 +15,7 @@ const SpaceHub = () => (
             <Rockets />
                     }
         />
+        <Route path="/missions" element={<Missions />} />
       </Routes>
     </div>
   </Router>
