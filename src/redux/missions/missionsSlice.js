@@ -1,21 +1,25 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import Service from '../../services/Service';
+import missionsService from '../../services/missionService';
 
-const rockets = [];
-const GET_ALL_ROCKETS = 'rockets/GET_ALL_ROCKETS';
+// Action
+const FETCH_MISSIONS = 'SPACE_TRAVELERS_HUB/rockets/FETCH_MISSIONS';
 
-export const getAllRockets = createAsyncThunk(GET_ALL_ROCKETS, async () => {
-  const response = await Service.fetchRockets();
+// Action creator
+export const getAllRockets = createAsyncThunk(FETCH_MISSIONS, async () => {
+  const response = await missionsService.fetchMissions();
   const responseResult = response.data;
-  const result = responseResult.map((obj) => ({ ...obj, reserved: false }));
-  return { rockets: result };
+  const result = responseResult.map((obj) => ({ ...obj }));
+  return { missions: result };
 });
 
-const reducer = (state = rockets, action) => {
+// Initialize state
+const missions = [];
+// Reducer
+const reducer = (state = missions, action) => {
   const { type, payload } = action;
   switch (type) {
-    case `${GET_ALL_ROCKETS}/fulfilled`:
-      return payload.rockets;
+    case `${FETCH_MISSIONS}/fulfilled`:
+      return payload.missions;
     default:
       return state;
   }
