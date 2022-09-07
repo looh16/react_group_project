@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import Missions from '../missions/Missions';
 import Rockets from '../rocket/Rockets';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SpaceHub = () => (
   <Router>
