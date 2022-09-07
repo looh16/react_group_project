@@ -1,20 +1,19 @@
 import React from 'react';
+import { Table } from 'react-bootstrap';
 import MissionsProfile from '../missions/MissionsProfile';
 
 function Profile() {
   return (
-    <div>
-      <div>
-        <h3>Reserved Missions</h3>
-        <ul>
-          {' '}
-          <MissionsProfile />
-        </ul>
-      </div>
-      <div>
-        <h3>Reserved Rockets</h3>
-      </div>
-    </div>
+    <Table bordered striped>
+      <tHead>
+        <tr>
+          <th>My Missions</th>
+          <th>My Rockets</th>
+        </tr>
+      </tHead>
+
+      <MissionsProfile />
+    </Table>
   );
 }
 
