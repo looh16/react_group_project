@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import Badge from 'react-bootstrap/Badge';
+import RocketsBookingButton from './RocketsBookingButton';
 import './Rocket.css';
 
 const Rocket = ({ rocket }) => (
@@ -9,8 +11,14 @@ const Rocket = ({ rocket }) => (
     <div className="container">
       <h3>{rocket.rocket_name}</h3>
       <p>
+        {
+        rocket.reserved
+          ? <Badge pill bg="info">Reserved</Badge>
+          : ''
+          }
         {rocket.description}
       </p>
+      <RocketsBookingButton id={rocket.id} reserved={rocket.reserved} />
     </div>
   </div>
 );
