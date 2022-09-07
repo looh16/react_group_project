@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { Button } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../../redux/missions/missionsSlice';
 
@@ -18,10 +19,15 @@ function MissionStatus(props) {
   const reservedStatus = () => (reserved ? 'Leave ' : 'Join ');
 
   return (
-    <button type="button" onClick={handleJoin}>
+    <Button
+      type="button"
+      onClick={handleJoin}
+      variant="outline-secondary"
+      size="small"
+    >
       {reservedStatus()}
       Mission
-    </button>
+    </Button>
   );
 }
 
