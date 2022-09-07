@@ -15,7 +15,7 @@ function MissionStatus(props) {
     }
   };
 
-  const reservedStatus = () => (!reserved ? 'Join ' : 'Leave ');
+  const reservedStatus = () => (reserved ? 'Leave ' : 'Join ');
 
   return (
     <button type="button" onClick={handleJoin}>
