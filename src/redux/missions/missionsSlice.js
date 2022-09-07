@@ -5,7 +5,7 @@ import missionsService from '../../services/missionService';
 const FETCH_MISSIONS = 'SPACE_TRAVELERS_HUB/rockets/FETCH_MISSIONS';
 
 // Action creator
-export const getAllRockets = createAsyncThunk(FETCH_MISSIONS, async () => {
+export const getAllMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   const response = await missionsService.fetchMissions();
   const responseResult = response.data;
   const result = responseResult.map((obj) => ({ ...obj }));
