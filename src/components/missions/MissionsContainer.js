@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 import { getAllMissions } from '../../redux/missions/missionsSlice';
 import MissionItem from './MissionItem';
 
-function MissionsContainer() {
+const MissionsContainer = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -30,6 +30,6 @@ function MissionsContainer() {
       </Table>
     </div>
   );
-}
+};
 
 export default MissionsContainer;
