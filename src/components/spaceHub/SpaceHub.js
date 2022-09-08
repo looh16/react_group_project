@@ -3,7 +3,6 @@ import Navigation from '../Navigation/Navigation';
 import Missions from '../missions/MissionsContainer';
 import Rockets from '../rocket/Rockets';
 import Profile from '../profile/Profile';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SpaceHub = () => (
   <Router>

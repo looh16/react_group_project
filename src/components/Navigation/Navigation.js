@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import planetIcon from '../../images/planetIcon.png';
 
 const Navigation = () => {
@@ -21,24 +21,27 @@ const Navigation = () => {
   ];
 
   return (
-    <div>
-      <nav>
-        <a href="/">
-          <img src={planetIcon} alt="logo" />
-          <span>Space Travelers&apos; Hub</span>
-        </a>
-        <ul>
+    <Navbar className="top-0 bg-white position-sticky ">
+      <Container>
+        <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
+          <img
+            alt="logo"
+            src={planetIcon}
+            width="90"
+            height="70"
+            className="d-inline-block align-top"
+          />
+          Space Travelers&apos; Hub
+        </Navbar.Brand>
+        <Nav className="d-flex align-items-center">
           {links.map((link) => (
-            <li key={link.id}>
-              <NavLink to={link.path}>
-                {link.text}
-              </NavLink>
-            </li>
+            <Nav.Link key={link.id} href={link.path}>
+              {link.text}
+            </Nav.Link>
           ))}
-        </ul>
-      </nav>
-    </div>
-
+        </Nav>
+      </Container>
+    </Navbar>
   );
 };
 

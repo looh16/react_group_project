@@ -5,7 +5,7 @@ import RocketsProfile from '../rocket/RocketsProfile';
 
 function Profile() {
   return (
-    <div className="container d-flex">
+    <div className="container d-flex justify-content-between">
       <Table bordered striped>
         <tHead>
           <tr>
