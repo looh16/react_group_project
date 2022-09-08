@@ -3,8 +3,7 @@ import Renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import RocketsProfile from '../components/rocket/RocketsProfile'
-
+import RocketsProfile from '../components/rocket/RocketsProfile';
 
 test('renders rocketProfile correctly', () => {
   const tree = Renderer.create(

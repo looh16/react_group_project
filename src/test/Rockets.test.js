@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 import Rockets from '../components/rocket/Rockets';
 
-
 test('renders rockets correctly', () => {
   const tree = Renderer.create(
     <React.StrictMode>
