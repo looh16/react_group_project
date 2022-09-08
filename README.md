@@ -1,56 +1,45 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# space_travelers_hub
 
-> Description the project.
-
+> A web application built for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. The app interacts with real live data from the SpaceX API.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- **Languages:** JavaScript, React, Redux, HTML5, CSS3
+- **Tools & Methods:** Git, GitHub, TDD, Chrome Dev Tools
+- **Frameworks:** React-Bootstrap, Bootstrap Javascript
+- **Technology used:** ESLint, Stylelint
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
+
+- Code editor
+- Computer
+- Internet
 
 ### Setup
 
-### Install
+### Clone this repository
 
-### Usage
+- $ _git clone https://github.com/looh16/space_travelers_hub.git
+- $ _cd space_travelers_hub_
 
-### Run tests
+### Run project
 
-### Deployment
-
+- $ _npm install_
+- $ _npm run start_
 
 
 ## Authors
+👤 **Custodio Serafim Langa**
 
-👤 **Author1**
+- GitHub: [Looh16](https://github.com/looh16)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Patrick Maina**
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [PNdunguMaina](https://github.com/PNdunguMaina)
 
 ## 🤝 Contributing
 
@@ -64,12 +53,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+[Microverse](https://www.microverse.org/)
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
