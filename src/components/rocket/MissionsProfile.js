@@ -9,7 +9,7 @@ const MissionsProfile = () => {
       <td key={mission.mission_id}>{mission.mission_name}</td>
     </tr>
   ));
-  return <tBody>{displayedMissions}</tBody>;
+  return <tbody>{displayedMissions}</tbody>;
 };
 
 export default MissionsProfile;

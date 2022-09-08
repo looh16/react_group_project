@@ -9,7 +9,7 @@ const RocketsProfile = () => {
       <td key={rocket.id}>{rocket.rocket_name}</td>
     </tr>
   ));
-  return <tBody>{displayedRockets}</tBody>;
+  return <tbody>{displayedRockets}</tbody>;
 };
 
 export default RocketsProfile;

@@ -7,21 +7,21 @@ function Profile() {
   return (
     <div className="container d-flex justify-content-between">
       <Table bordered striped>
-        <tHead>
+        <thead>
           <tr>
             <th>My Rockets</th>
           </tr>
-        </tHead>
+        </thead>
 
         <RocketsProfile />
       </Table>
 
       <Table bordered striped>
-        <tHead>
+        <thead>
           <tr>
             <th>My Missions</th>
           </tr>
-        </tHead>
+        </thead>
 
         <MissionsProfile />
       </Table>

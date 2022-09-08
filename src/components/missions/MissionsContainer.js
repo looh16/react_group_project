@@ -13,20 +13,20 @@ const MissionsContainer = () => {
     }
   }, []);
   return (
-    <div>
+    <div style={{ padding: '2rem', overflowY: 'scroll' }}>
       <Table striped bordered>
-        <tHead>
+        <thead>
           <tr>
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
           </tr>
-        </tHead>
-        <tBody>
+        </thead>
+        <tbody>
           {missions.map((mission) => (
-            <MissionItem key={mission.id} mission={mission} />
+            <MissionItem key={mission.mission_id} propsMission={mission} />
           ))}
-        </tBody>
+        </tbody>
       </Table>
     </div>
   );

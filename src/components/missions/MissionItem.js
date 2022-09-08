@@ -3,21 +3,24 @@ import { PropTypes } from 'prop-types';
 import MissionStatus from './MissionStatus';
 import MissionActive from './MissionActive';
 
-const MissionItem = ({ mission }) => (
+const MissionItem = ({ propsMission }) => (
   <tr>
-    <td>{mission.mission_name}</td>
-    <td>{mission.description}</td>
+    <th>{propsMission.mission_name}</th>
+    <td>{propsMission.description}</td>
     <td>
-      <MissionActive mission={mission.reserved} />
+      <MissionActive mission={propsMission.reserved} />
     </td>
     <td>
-      <MissionStatus reserved={mission.reserved} id={mission.mission_id} />
+      <MissionStatus
+        reserved={propsMission.reserved}
+        id={propsMission.mission_id}
+      />
     </td>
   </tr>
 );
 
 MissionItem.propTypes = {
-  mission: PropTypes.bool.isRequired,
+  propsMission: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default MissionItem;
