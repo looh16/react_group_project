@@ -6,7 +6,7 @@ import Profile from '../profile/Profile';
 
 const SpaceHub = () => (
   <Router>
-    <div className="container">
+    <div>
       <Navigation />
       <Routes>
         <Route exact path="/" element={<Rockets />} />
