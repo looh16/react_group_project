@@ -15,7 +15,7 @@ const Rockets = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container d-flex flex-column">
       {
         rockets.map((rocket) => (
           <Rocket

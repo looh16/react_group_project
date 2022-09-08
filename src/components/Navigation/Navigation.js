@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import planetIcon from '../../images/planetIcon.png';
+import './Navigation.css';
 
 const Navigation = () => {
   const links = [
@@ -21,10 +22,10 @@ const Navigation = () => {
   ];
 
   return (
-    <div>
-      <nav>
+    <div className="container d-flex divNav">
+      <nav className="navbar navbar-expand-lg menu shadow fixed-top">
         <a href="/">
-          <img src={planetIcon} alt="logo" />
+          <img className="logo" src={planetIcon} alt="logo" />
           <span>Space Travelers&apos; Hub</span>
         </a>
         <ul>
