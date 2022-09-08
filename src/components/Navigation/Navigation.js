@@ -35,9 +35,9 @@ const Navigation = () => {
           Space Travelers&apos; Hub
         </Navbar.Brand>
         <Nav className="d-flex align-items-center">
-          {links.map((lin) => (
-            <Nav.Link key={lin.id} as={Link} to={lin.path}>
-              {lin.text}
+          {links.map((link) => (
+            <Nav.Link key={link.id} as={Link} to={link.path}>
+              {link.text}
             </Nav.Link>
           ))}
         </Nav>
