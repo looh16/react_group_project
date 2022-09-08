@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import planetIcon from '../../images/planetIcon.png';
-import './Navigation.css';
+// import './Navigation.css';
 
 const Navigation = () => {
   const links = [
