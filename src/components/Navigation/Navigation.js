@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import planetIcon from '../../images/planetIcon.png';
 
@@ -34,18 +34,10 @@ const Navigation = () => {
           />
           Space Travelers&apos; Hub
         </Navbar.Brand>
-        <Nav>
+        <Nav className="d-flex align-items-center">
           {links.map((link) => (
-            <Nav.Link key={link.id}>
-              <NavLink
-                key={link.id}
-                to={link.path}
-                style={(isActive) => ({
-                  textDecoration: isActive ? 'none' : 'underline',
-                })}
-              >
-                {link.text}
-              </NavLink>
+            <Nav.Link key={link.id} as={Link} to={link.path}>
+              {link.text}
             </Nav.Link>
           ))}
         </Nav>
