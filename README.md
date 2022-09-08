@@ -33,9 +33,9 @@
 
 
 ## Authors
-👤 **Author**
+👤 **Custodio Serafim Langa**
 
-- GitHub: [username](link)
+- GitHub: [Looh16](https://github.com/looh16)
 
 👤 **Patrick Maina**
 
