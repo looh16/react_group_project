@@ -11,12 +11,17 @@ const Rocket = ({ rocket }) => (
     <div className="container">
       <h3>{rocket.rocket_name}</h3>
       <p>
-        {
-        rocket.reserved
-          ? <Badge pill bg="info">Reserved</Badge>
-          : ''
-          }
-        {rocket.description}
+        {!rocket.reserved && (
+        <p>{rocket.description}</p>
+        )}
+        {rocket.reserved && (
+          <p>
+            {' '}
+            <Badge pill bg="info">Reserved</Badge>
+            {' '}
+            {rocket.description}
+          </p>
+        )}
       </p>
       <RocketsBookingButton id={rocket.id} reserved={rocket.reserved} />
     </div>
