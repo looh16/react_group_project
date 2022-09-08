@@ -9,11 +9,26 @@ const RocketsBookingButton = (props) => {
 
   return (
     <>
-      {
-        reserved
-          ? <button id={id} type="button" className="btn btn-light" onClick={() => dispatch(bookingCancel(id))}>Cancel Reservation</button>
-          : <button type="button" className="btn btn-primary" onClick={() => dispatch(bookingRocket(id))}>Reserve Rocket</button>
-      }
+      {!reserved && (
+      <button
+        id={id}
+        type="button"
+        className="btn btn-primary"
+        onClick={() => dispatch(bookingCancel(id))}
+      >
+        <span>Reserve Rocket</span>
+      </button>
+      )}
+      {reserved && (
+        <button
+          id={id}
+          type="button"
+          className="btn btn-light"
+          onClick={() => dispatch(bookingRocket(id))}
+        >
+          <span>Cancel Reserve</span>
+        </button>
+      )}
     </>
   );
 };
