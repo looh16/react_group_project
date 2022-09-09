@@ -31,6 +31,8 @@
 - $ _npm install_
 - $ _npm run start_
 
+### Live Demo
+- https://spacetravelershub-app.netlify.app/
 
 ## Authors
 👤 **Custodio Serafim Langa**
