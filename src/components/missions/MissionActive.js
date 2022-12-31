@@ -7,7 +7,7 @@ function MissionActive(props) {
   const activeStatus = () => (mission ? 'Active Member' : 'NOT A MEMBER');
 
   return (
-    <Button type="button" variant="success">
+    <Button type="button" variant="success" disabled>
       {activeStatus()}
     </Button>
   );

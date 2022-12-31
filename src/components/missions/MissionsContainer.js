@@ -13,8 +13,8 @@ const MissionsContainer = () => {
     }
   }, []);
   return (
-    <div style={{ padding: '2rem', overflowY: 'scroll' }}>
-      <Table striped bordered>
+    <div className="container-fluid d-flex shadow-lg p-3 rounded table-div">
+      <Table striped bordered responsive="sm">
         <thead>
           <tr>
             <th>Mission</th>

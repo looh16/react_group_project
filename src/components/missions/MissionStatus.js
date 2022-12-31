@@ -24,9 +24,12 @@ function MissionStatus(props) {
       onClick={handleJoin}
       variant="outline-secondary"
       size="small"
+      active
     >
-      {reservedStatus()}
-      Mission
+      <span className="btn-text">
+        {reservedStatus()}
+        Mission
+      </span>
     </Button>
   );
 }
