@@ -5,3 +5,15 @@ body {
 .active {
   text-decoration: underline;
 }
+
+@media (max-width: 375px) {
+  .logo {
+    width: 50px;
+    height: 30px;
+  }
+
+  .nav-brand {
+    font-size: medium;
+    font-weight: bold;
+  }
+}
