@@ -5,7 +5,6 @@ import {
   Nav,
 } from 'react-bootstrap';
 import planetIcon from '../../images/planetIcon.png';
-import './Navigation.css';
 import '../../App.css';
 
 const Navigation = () => {
@@ -27,7 +26,7 @@ const Navigation = () => {
     },
   ];
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="top-0 position-sticky">
       <Container>
         <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
           <img
