@@ -1,6 +1,11 @@
 .rocketImages {
-  width: 15vw;
-  height: 30vh;
+  max-width: 400px;
+  max-height: 800px;
   object-fit: cover;
-  margin: 5px;
+}
+
+@media (max-width: 992px) {
+  .rocket-div {
+    flex-direction: column;
+  }
 }
